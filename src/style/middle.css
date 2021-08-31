@@ -1,0 +1,257 @@
+.mid-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.mid{
+    margin: 1.8rem 3rem 0 3rem;
+}
+
+.chartJs{
+    margin: 1.2rem auto 0 auto;
+}
+.selected-chart{
+    width: 16.5rem; 
+    height: 16.5rem;
+}
+.indoChart{
+    width: 16.875rem; 
+    height: 16.875rem;
+}
+#myChartSelected{
+    width: inherit;
+    height: inherit;
+}
+input{
+    margin: 1rem 0 0rem 0;
+}
+
+.counters{
+    font-size: 1rem;
+}
+.title-count{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+.indo-info, .select-info{
+    margin: 1.5rem 0 1rem 0;
+}
+.indo-info, .select-info{
+    display: flex;
+    justify-content: space-around;
+}
+#selected{
+    height: 2rem;
+}
+#select-province[type=text]{
+    padding: 8px;
+    border: 1px solid #273043;
+    border-radius: 10px;
+    background-color: #ebfbff;
+    color: black;
+    font-weight: 800;
+}
+#selected[type=text]{
+    padding: 8px !important;
+    border: 1px solid #273043 !important;
+    border-radius: 10px !important;
+    background-color: #ebfbff !important;
+    color: black !important;
+    font-weight: 800 !important;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(0, 0, 0);
+    opacity: 1; /* Firefox */
+    font-weight: 800;
+}
+
+#btnIndo{
+    width: 6rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: #273043;
+    background-color: #ebfbff;
+    box-shadow: 2px 2px 5px rgb(26, 25, 25);
+    transition: all 0.2s linear;
+}
+#btnIndo:hover{
+    background-color: #c7cbcc;
+}
+
+#select-recover > h3, #select-recover > h4,
+#indo-recover > h3, #indo-recover > h4{
+    color: #5cdcfc;
+}
+#select-case > h3, #select-case > h4,
+#indo-case > h3, #indo-case > h4{
+    color: #ffaf75;
+}
+#select-death > h3, #select-death > h4,
+#indo-death > h3, #indo-death > h4{
+    color: #ff5c5c;
+}
+.select-info{
+    animation: popUp 0.5s ease 1 alternate forwards;
+}
+#select-province{
+    margin-bottom: 1rem;
+}
+.indo{
+    margin-top: 3rem;
+    border: 0.3px solid #8c1414;
+    border-radius: 10px;
+    width: 45rem;
+    box-shadow: 2px 2px 5px rgb(26, 25, 25);
+    background: linear-gradient(35deg, #8c1414, #e35959);
+    margin: 3rem auto 3rem auto;
+}
+#indo-title{
+    text-align: center;
+    margin-top: 2rem;
+}
+#indoFlag{
+    width: 68px;
+    margin-top: 0.6rem;
+}
+.indoChart{
+    margin-top: 0rem;
+}
+#loadIndo {
+    width: 6rem;
+    height: 6rem;
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid rgba(255, 135, 0, 0.62);
+    border-radius: 100%;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.more-indo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+.province, .vaccinate{
+    width: 15rem;
+}
+#indocovImg{
+    width: 8rem;
+    height: 6rem;
+    margin-top: -2rem;
+}
+#indocovImg2{
+    display: none;
+    width: 8rem;
+    height: 6rem;
+}
+.indocovImg2Div{
+    display: flex;
+    justify-content: center;
+}
+.province-more{
+    margin: 0.5rem;
+}
+
+.vax-recap, .vax-target{
+    margin-top: 2rem;
+}
+.vax-recap-info, .vax-target-info, .province-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.vax-target > h4, .vax-recap > h4{
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+.vax-recap-info{
+    margin-top: 1rem;
+}
+.vax-target-more, .vax-1stdose, .vax-2nddose{
+    margin: 1rem;
+}
+hr{
+    opacity: 0.8;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+}
+@keyframes popUp {
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .indo{
+        width: 27rem;
+    }
+    .mid-container{
+        flex-direction: column;
+    }
+    .indo-info, .select-info{
+        justify-content: space-evenly;
+    }
+    #indocovImg{
+        display: none;
+    }
+    #indocovImg2{
+        display: initial;
+    }
+    .more-indo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .province-more{
+        margin: 1rem 0 2rem 0;
+    }
+    .vax-more{
+        margin: 1rem 0 2rem 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .indo{
+        width: 19rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .selected-chart{
+        width: 14rem;
+        height: 14rem;
+    }
+    .indoChart{
+        width: 14rem; 
+        height: 14rem;
+    }
+    .indo{
+        width: 17rem;
+    }
+}
+@media screen and (max-width: 300px) {
+    .selected-chart{
+        width: 12rem;
+        height: 12rem;
+    }
+    .indoChart{
+        width: 12rem; 
+        height: 12rem;
+    }
+    .indo-info, .select-info{
+        
+        justify-content: space-between;
+    }
+    .indo{
+        width: 15rem;
+    }
+}

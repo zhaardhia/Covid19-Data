@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+    <header>
+        <app-bar></app-bar>
+    </header>
+    <main>
+        <div class="loading" style="margin-top: 2rem;"></div>
+        <div id="globalData" class="global-data">
+            <h3>Global Data</h3>
+            <div class="globalFirst">
+                <img src="https://i.ibb.co/64fc3sD/world.png" class="world world1" alt="World Logo">
+                <div id="cases" class="card cardFirst" >
+                    <h2 class="counters">0</h2>
+                    <h3>Cases</h3>
+                </div>
+                
+                <img src="https://i.ibb.co/64fc3sD/world.png" class="world world2" alt="World Logo">
+                <div id="recovered" class="card cardFirst">
+                    <h2 class="counters">0</h2>
+                    <h3>Recovered</h3>
+                </div>
+            </div>
+            <div class="globalSecond">
+                <div id="death" class="card cardSecond">
+                    <h2 class="counters">0</h2>
+                    <h3 class="">Death</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid-container">
+            <div class="select-country mid">
+                <h3>Select Country:</h3> 
+                <input list="selected-id" type="text" id="selected">
+                
+                <datalist id="selected-id">
+                    
+                </datalist>
+                
+                <div class="chartJs selected-chart">
+                    <canvas id="myChartSelected"></canvas>  
+                </div>
+                <div class="select-info">
+                    <div id="select-case">
+                        <h3 class="counters">0</h3>
+                        <h4 class="title-count">Cases</h4>
+                    </div>
+                    <div id="select-recover">
+                        <h3 class="counters recover">0</h3>
+                        <h4 class="title-count">Recovered</h4>
+                    </div>
+                    <div id="select-death">
+                        <h3 class="counters">0</h3>
+                        <h4 class="title-count">Death</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="indonesia-country mid">
+                <h3>Indonesia Data</h3>
+                <img id="indoFlag" src="https://i.ibb.co/LY9MGRK/indoflag.png" alt="Indo Flag">
+                    
+                <div id="loadIndo" style="margin-top: 2rem;"></div>
+                <div class="chartJs indoChart">
+                    <canvas id="myChartIndo"></canvas>  
+                </div>
+                <div class="indo-info">
+                    
+                </div>
+                <button id="btnIndo" style="display: none;">More Info</button>
+            </div>
+        </div>
+
+
+    </main>
+    <hr>
+    <footer>
+        <footer-bar></footer-bar>
+    </footer>
+    
+    
+</body>
+</html>

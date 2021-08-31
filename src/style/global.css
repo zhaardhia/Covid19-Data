@@ -1,0 +1,110 @@
+
+#globalData > h3{
+    text-align: center;
+    font-weight: 400;
+}
+.card{
+    border-radius: 10px;
+    width: 13rem;
+    height: 5.4rem;
+    text-align: center;
+    line-height: 1.5;
+    box-shadow: 2px 2px 5px rgb(26, 25, 25);
+    animation: popUp 0.5s ease 1 alternate forwards;
+}
+.card > h3{
+    font-size: 0.7rem;
+    font-weight: 100;
+    opacity: 0.8;
+}
+.card > h2{
+    font-weight: 100;
+    margin-top: 1.4rem;
+    font-size: 1.1rem;
+}
+
+.cardFirst{
+    margin-top: 5rem;
+}
+.globalSecond{
+    display: grid;
+    justify-content: center;
+}
+.globalFirst{
+    display: flex;
+    justify-content: center;
+}
+.world{
+    width: 18rem;
+}
+.world1{
+    display: none;
+}
+#recovered{
+    background: linear-gradient(35deg, #9197AE, #18b7cc);
+}
+#cases{
+    background: linear-gradient(35deg, #bb530e, #f58235);
+}
+#death{
+    background: linear-gradient(35deg, #85001d, #a3334b);
+}
+
+.loading {
+    width: 8rem;
+    height: 8rem;
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid rgba(255, 135, 0, 0.62);
+    border-radius: 100%;
+    margin: auto;
+    animation: spin2 1s infinite linear;
+}
+@keyframes spin2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes popUp {
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .card{
+        width: 17rem;
+        height: 5.6rem;
+    }
+    .world1{
+        display: initial;
+    }
+    .world2{
+        display: none;
+    }
+    .globalFirst{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardFirst{
+        margin-top: 2rem;
+    }
+    .cardSecond{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-height: 750px){
+    .world{
+        width: 15rem;
+    }
+    .card{
+        width: 12rem;
+    }
+}
